@@ -1,0 +1,7 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "lint": "npm run lint --prefix frontend"
+  }
+}
