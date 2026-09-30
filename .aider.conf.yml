@@ -1,0 +1,21 @@
+model: gemini/gemini-3.1-flash-lite
+
+auto-commits: true
+attribute-author: true
+attribute-committer: true
+commit-prompt: "feat(ai): {summary}"
+
+map-tokens: 1024
+map-refresh: auto
+
+auto-test: true
+test-cmd: "cd frontend && npm run lint"
+
+message: |
+  Вы работаете в режиме точечной разработки над Fullstack-проектом.
+  Структура: /backend (Django REST) и /frontend (React Vite).
+
+  СТРОГИЕ ПРАВИЛА ДЛЯ FLASH LITE:
+  1. Вноси изменения ТОЛЬКО в те файлы, которые указаны в запросе или добавлены через /add.
+  2. Не переписывай файлы целиком, если требуется добавить небольшую функцию.
+  3. Не чисти и не изменяй настройки CORS/JWT без прямого указания.
